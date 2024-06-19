@@ -1,0 +1,145 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: rgb(232, 80, 30);
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 6rem); /* Adjust values as needed */
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 6rem); /* Adjust values as needed */
+}
+
+.background-top {
+  position: relative;
+  z-index: 1; /* Add this line */
+}
+
+.background-container {
+  position: relative;
+}
+
+.background-top img {
+  width: 40%;
+  height: auto;
+  position: center;
+  filter: brightness(1.0); /* Adjust the brightness value as needed */
+  opacity: 1.0;
+}
+
+.background-top .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(232, 80, 30);
+  font-family: 'Chalkboard', sans-serif; /* Use Chalkboard font */
+  font-size: 72px; /* Adjust the font size as needed */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better visibility */
+}
+
+.background-bottom img {
+  height: auto;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.top-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.canvas-container {
+  width: 100%;
+  max-width: 600px; /* Adjust the max-width as needed */
+  height: auto; /* Allow height to adjust proportionally */
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+#memeCanvas {
+  border: 2px solid #ccc;
+  border-radius: 10px; /* Adjust the value as needed */
+  width: 100%;
+  height: auto;
+}
+
+/* Style for all buttons */
+button, .file-upload-button {
+  appearance: none;
+  background-color: rgb(215, 109, 28) !important;
+  color: rgb(251, 247, 247) !important;
+  font-size: 12px !important;
+  padding: 8px 18px !important;
+  border: none !important;
+  border-radius: 10px !important;
+  cursor: pointer !important;
+}
+
+/* Optional: Add hover effect */
+button:hover, .file-upload-button:hover {
+  background-color: #90ee90 !important;
+}
+
+.arrow-container {
+  text-align: center;
+  margin-top: 50px; /* Adjust as needed */
+  margin-bottom: 80px; /* Adjust as needed */
+}
+
+.arrow-text {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(232, 80, 30);
+  margin-bottom: 10px;
+  text-decoration: none; /* Add this line to remove underline */
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgb(7, 0, 0);
+  margin: 0 auto;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px; /* Adjust as needed */
+}
+
+.social-icon {
+  margin: 0 10px; /* Adjust spacing between icons */
+}
+
+.social-icon img {
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  transition: transform 0.3s;
+}
+
+.social-icon img:hover {
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Make Piggy</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="background-top">
+    <img src="PIGGY-FULL.png" alt="Background Top">
+    <div class="title"></div>
+  </div>
+  <h1 class="xxl:text-7xl mt-2 text-center font-mono text-3xl font-bold md:text-4xl lg:text-6xl">PIGGED&#8226;BY&#8226;PIGGY</h1>
+  <h2 class="xxl:text-7xl mt-2 text-center font-mono text-3xl font-bold md:text-4xl lg:text-6xl">$PIGGY</h2>
+  <div class="social-icons">
+    <a href="https://x.com/piggedbypiggy" target="_blank" class="social-icon">
+      <img src="x-icon.png" alt="Twitter">
+    </a>
+    <a href="http://t.me/piggedbypiggy" target="_blank" class="social-icon">
+      <img src="t-icon.png" alt="Telegram">
+    </a>
+    <a href="https://magiceden.io/runes/PIGGED%E2%80%A2BY%E2%80%A2PIGGY" target="_blank" class="social-icon">
+        <img src="ME.png" alt="Magic Eden">
+      </a>
+  </div>
+  <div class="arrow-container">
+    <a href="#memeCanvas" style="text-decoration: none;">
+      <span class="arrow-text">MAKE A PIGGY</span>
+            <a href="#memeCanvas">
+      <div class="arrow-down"></div>
+    </a>
+    </a>
+  </div>
+
+  <div class="content-container">
+    <div class="top-container">
+      <div class="upload-section">
+        <label for="imageUpload" class="file-upload-button">CHOOSE FILE</label>
+        <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+        <button id="addNose">ADD PIGGY</button>
+        <button id="resetBtn">RESET</button>
+      </div>
+      <div class="canvas-container">
+          <canvas id="memeCanvas" width="600" height="500"></canvas>
+      </div>
+      <button id="downloadBtn">DOWNLOAD</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <footer style="padding-top: 50px;">
+    <div class="flex flex-col items-center space-y-4 text-gray-700"></svg></div>
+    <p class="text-center">Copyright 2024 PIGGED&#8226;BY&#8226;PIGGY</p>
+  </footer>
+</body>
+</html>
